@@ -4,12 +4,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import re
 
 app = Flask(__name__)
-app.secret_key = 'shri#123'
+app.secret_key = 'your_key'
 # Configure MySQL
 db = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='MySQL#123',
+    password='pass',
     database='hospital_db'
 )
 
